@@ -43,6 +43,9 @@ function App() {
 
   function handleChangeTo(item) {
     document.getElementById(item.id).innerText = changeToDo;
+    changeName.current.style.display = "none";
+    changeBtn.current.style.display = "none";
+    item.comment = changeToDo;
   }
 
   return (
